@@ -15,5 +15,5 @@
 Route::group([
     'namespace' => '\App\Api\Controllers'
 ], function () {
-    Route::resource('posts', 'PostController');
+    Route::resource('posts', 'PostController')->except(['edit', 'create']);
 });
